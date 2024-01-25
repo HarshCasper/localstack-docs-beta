@@ -20,6 +20,11 @@ const config = {
   projectName: 'localstack-docs-beta', // Usually your repo name.
 
   plugins: [
+    [
+      'docusaurus-pushfeedback',{
+          project: '305mpb4j7s'
+      }
+    ],
     'docusaurus-plugin-sass',
 
     [require.resolve('@cmfcmf/docusaurus-search-local'), {
@@ -81,7 +86,6 @@ const config = {
       }
     }]
   ],
-
   presets: [
     [
       'classic',
